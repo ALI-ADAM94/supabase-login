@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Wrapper from "./pages/Wrapper";
 const  App=()=> {
   return (
 <BrowserRouter>
@@ -15,7 +16,11 @@ const  App=()=> {
     {/* Login*/}
   <Route path="/login" element={<Login />}/>
    {/* Dashboard*/}
-   <Route path="/dashboard" element={<Dashboard />}/>
+   <Route path="/dashboard" element={
+    <Wrapper>
+         <Dashboard />
+    </Wrapper>
+    }/>
 </Routes>
 </BrowserRouter>
     
