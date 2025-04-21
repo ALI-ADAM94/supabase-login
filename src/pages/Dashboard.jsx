@@ -27,9 +27,19 @@ const Dashboard =()=> {
     user !=signOut ? (  
         <>  
           <h1>Hello , you are logged in.</h1>
-        <List/>
-        <Chat/>
-        <Detail/>
+          <div className="flex h-screen">
+  <div className="flex-1 border-r border-gray-300">
+    <List />
+  </div>
+  <div className="flex-1 border-r border-gray-300">
+    <Chat />
+  </div>
+  <div className="flex-1">
+    <Detail />
+  </div>
+</div>
+
+      
         </>
     ) : (
 
