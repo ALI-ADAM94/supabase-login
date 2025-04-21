@@ -79,9 +79,9 @@ const Chat = () => {
     </div>
     <div className="bottom flex items-center gap-2 p-2 border-t">
     <div className="icons overflow-x-auto whitespace-nowrap flex gap-2 max-w-full">
-  <img src="/img.png" alt="" className="inline-block" />
-  <img src="/camera.png" alt="" className="inline-block" />
-  <img src="/mic.png" alt="" className="inline-block" />
+  <img src="/img.png" alt="" />
+  <img src="/camera.png" alt="" />
+  <img src="/mic.png" alt=""/>
 </div>
 
   <input
