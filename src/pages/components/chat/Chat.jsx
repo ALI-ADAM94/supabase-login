@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './chat.css';
 import EmojiPicker from 'emoji-picker-react';
-import src from '/src/assets/';
+
 const Chat = () => {
   const [open,setOpen] = useState(false);
   const[text,setText] = useState("");
@@ -20,7 +20,7 @@ const Chat = () => {
     <div className='chat'>
     <div className='top'>
       <div className='user'>
-        <img src={src+"avatar.png"} alt=''/>
+        <img src="../assets/avatar.png" alt=''/>
         <div className='texts'>
           <span>Ali Adam</span>
           <p>welcome to my App</p>
