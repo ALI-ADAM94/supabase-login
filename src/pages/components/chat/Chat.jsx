@@ -78,7 +78,7 @@ const Chat = () => {
       <div ref={endRef}></div>
     </div>
     <div className="bottom">
-    <div className="icons overflow-x-auto whitespace-nowrap flex gap-2 max-w-full">
+    <div className="icons">
   <img src="/img.png" alt="" />
   <img src="/camera.png" alt="" />
   <img src="/mic.png" alt=""/>
@@ -100,7 +100,7 @@ const Chat = () => {
       onClick={() => setOpen((prev) => !prev)}
       className="cursor-pointer"
     />
-    <div className="picker absolute top-full mt-1 z-200">
+    <div className="picker">
       <EmojiPicker open={open} onEmojiClick={handleEmoji} />
     </div>
   </div>
