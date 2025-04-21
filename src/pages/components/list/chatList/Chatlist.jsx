@@ -37,8 +37,6 @@ const Chatlist = () => {
             <p>Hello</p>
          </div>
     </div>
-    
-  
     <div className='item'>
          <img src='./avatar.png' alt=''/>
          <div className='texts'>
