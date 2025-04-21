@@ -19,7 +19,7 @@ const Chat = () => {
     <div className='chat'>
     <div className='top'>
       <div className='user'>
-        <img src='./avatar.png' alt=''/>
+        <img src='..../avatar.png' alt=''/>
         <div className='texts'>
           <span>Ali Adam</span>
           <p>welcome to my App</p>
