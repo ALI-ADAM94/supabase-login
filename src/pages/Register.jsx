@@ -53,7 +53,7 @@ const Register = () => {
           </motion.div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 justify-center">
           <input
             type="email"
             placeholder="Email"
@@ -78,7 +78,7 @@ const Register = () => {
           </button>
         </form>
 
-        <div className="mt-6 text-center text-sm text-gray-600">
+        <div className="mt-6 text-center text-sm text-white">
           <span>Already have an account? </span>
           <Link to="/login" className="text-blue-500 hover:underline">
             Login

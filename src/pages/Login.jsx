@@ -40,7 +40,7 @@ const Login = () => {
         
         {message && <div className="mb-4 text-red-600 text-sm">{message}</div>}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 justify-center">
           <input
             type="email"
             placeholder="Email"
@@ -67,7 +67,7 @@ const Login = () => {
           </motion.button>
         </form>
 
-        <div className="mt-6 text-center text-sm text-gray-600">
+        <div className="mt-6 text-center text-sm text-white">
           <span>Don't have an account? </span>
           <Link to="/register" className="text-blue-600 hover:underline">Register</Link>
         </div>
