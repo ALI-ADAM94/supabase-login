@@ -37,7 +37,7 @@ const Chatlist = () => {
             <p>Hello</p>
          </div>
     </div>
-    </div>
+    
   
     <div className='item'>
          <img src='./avatar.png' alt=''/>
@@ -59,6 +59,7 @@ const Chatlist = () => {
             <span>Ali Adam</span>
             <p>Hello</p>
          </div>
+    </div>
     </div>
     {addMode &&<AddUser/>}
     </div>
