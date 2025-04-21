@@ -20,12 +20,25 @@ const Dashboard =()=> {
         navigate(<Notification/>)
  
   }
+  const user = !signOut;
 
   return (
-    <div>
+    <div>{
+    user ? (  
+        <>  
+          <h1>Hello , you are logged in.</h1>
+        <List/>
+        <Chat/>
+        <Detail/>
+        </>
+    ) : (
+
+    <Login/>
+    )}
+     <Notification/>
 
         
-          <h1>Hello , you are logged in.</h1>
+      
           
   
     </div>
