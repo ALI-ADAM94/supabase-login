@@ -15,7 +15,7 @@ const Chatlist = () => {
         onClick={()=>setAddMode((prev)=> !prev)}
       />
     </div>
-    <div class="h-[600px] overflow-y-auto border p-4">
+    <div class="h-90 overflow-y-auto border p-4">
     <div className='item'>
          <img src='./avatar.png' alt=''/>
          <div className='texts'>
