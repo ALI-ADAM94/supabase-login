@@ -105,7 +105,7 @@ const Chat = () => {
     </div>
   </div>
   
-  <button className="sendButton px-4 py-2 bg-blue-500 text-white rounded-md">
+  <button className="sendButton px-4 py-4 bg-blue-500 text-white rounded-md">
     Send
   </button>
 </div>
