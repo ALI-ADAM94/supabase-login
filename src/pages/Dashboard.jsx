@@ -21,11 +21,13 @@ const Dashboard =()=> {
       signOut ==false ? (  
         <>
         <h1>Hello , you are logged in.</h1>
-        <List/>
-        <Chat/>
-        <Detail/>
+        navigate(<List/>);
+        navigate(<Chat/>);
+        navigate(<Detail/>);
+
         <button onClick={signOut}>Sign out</button>
-        <Notification/>
+        navigate(<Notification/>)
+        
         </>
     ) : (
 
