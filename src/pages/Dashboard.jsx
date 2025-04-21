@@ -12,7 +12,7 @@ const Dashboard =()=> {
   const signOut = async ()=>{
        const {error}= await supabase.auth.signOut();
        if(error) throw error;
-       navigate("/login");
+ 
   }
 
   return (
@@ -29,7 +29,7 @@ const Dashboard =()=> {
         </>
     ) : (
 
- 
+      navigate(Login)
     )}
  
 
