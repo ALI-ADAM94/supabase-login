@@ -58,10 +58,10 @@ const Chatlist = () => {
             <p>Hello</p>
          </div>
     </div>
-    </div>
+
     {addMode &&<AddUser/>}
     </div>
-    
+        </div>
   )    
 }
 
