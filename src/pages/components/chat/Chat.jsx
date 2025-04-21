@@ -79,9 +79,9 @@ const Chat = () => {
     </div>
     <div className="bottom flex items-center gap-2 p-2 border-t">
   <div className="icons overflow-x-auto whitespace-nowrap flex gap-2">
-    <img src="/img.png" alt="" className="inline-block" />
-    <img src="/camera.png" alt="" className="inline-block" />
-    <img src="/mic.png" alt="" className="inline-block" />
+    <img src="/img.png" alt="" className="" />
+    <img src="/camera.png" alt="" className="" />
+    <img src="/mic.png" alt="" className="" />
   </div>
   
   <input
@@ -94,7 +94,7 @@ const Chat = () => {
   
   <div className="emoji relative">
     <img
-      src="/public/emoji.png"
+      src="/emoji.png"
       alt=""
       onClick={() => setOpen((prev) => !prev)}
       className="cursor-pointer"
