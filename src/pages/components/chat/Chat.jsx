@@ -32,7 +32,8 @@ const Chat = () => {
         <img src='/info.png' alt=''/>
       </div>
     </div>
-    <div className='center'>
+    <div className='center' class="h-80 overflow-y-auto  p-4">
+
       <div className='message '>
         <img src='/avatar.png' alt=''/>
         <div className='texts'>
