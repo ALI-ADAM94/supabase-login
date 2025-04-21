@@ -47,7 +47,7 @@ const Register = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="mb-4 text-center text-sm text-gray-600 bg-green-400"
+            className="mb-4 text-center text-sm text-gray-600 bg-green-400 border-r-green-400"
           >
             {message}
           </motion.div>
