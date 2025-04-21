@@ -3,7 +3,6 @@ import  {Link}  from 'react-router-dom'
 const Home =()=> {
   return (
     <div>
-       
          <br/>
          <br/>
          <Link to="/login" class='items-center'>Login</Link>

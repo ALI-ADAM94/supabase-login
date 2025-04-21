@@ -89,11 +89,11 @@ const Chat = () => {
     placeholder="Type a message..."
     value={text}
     onChange={(e) => setText(e.target.value)}
-    className="w-48 px-4 py-4 border rounded-md"
+    
 
   />
   
-  <div className="emoji relative">
+  <div className="emoji">
     <img
       src="/emoji.png"
       alt=""
