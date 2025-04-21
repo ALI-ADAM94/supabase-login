@@ -36,7 +36,15 @@ const Login = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Login</h2>
+            <motion.h2
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.2, duration: 0.4 }}
+                className="text-2xl font-bold text-center mb-6"
+              >
+                   Login
+              </motion.h2>
+        <h2 className="text-2xl font-bold text-center text-white mb-6"></h2>
         
         {message && <div className="mb-4 text-red-600 text-sm">{message}</div>}
 
