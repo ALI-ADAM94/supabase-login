@@ -78,12 +78,12 @@ const Chat = () => {
       <div ref={endRef}></div>
     </div>
     <div className="bottom flex items-center gap-2 p-2 border-t">
-  <div className="icons overflow-x-auto whitespace-nowrap flex gap-2">
-    <img src="/img.png" alt="" className="" />
-    <img src="/camera.png" alt="" className="" />
-    <img src="/mic.png" alt="" className="" />
-  </div>
-  
+    <div className="icons overflow-x-auto whitespace-nowrap flex gap-2 max-w-full">
+  <img src="/img.png" alt="" className="inline-block" />
+  <img src="/camera.png" alt="" className="inline-block" />
+  <img src="/mic.png" alt="" className="inline-block" />
+</div>
+
   <input
     type="text"
     placeholder="Type a message..."
@@ -99,7 +99,7 @@ const Chat = () => {
       onClick={() => setOpen((prev) => !prev)}
       className="cursor-pointer"
     />
-    <div className="picker absolute top-full mt-1 z-10">
+    <div className="picker absolute top-full mt-1 z-50">
       <EmojiPicker open={open} onEmojiClick={handleEmoji} />
     </div>
   </div>
