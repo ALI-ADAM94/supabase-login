@@ -31,7 +31,7 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-transparent px-4">
       <motion.div
-        className="w-full max-w-md  justify-center bg-transparent p-8 rounded-2xl shadow-md"
+        className="w-full max-w-md  justify-center  p-8 rounded-2xl shadow-md"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
