@@ -77,7 +77,7 @@ const Chat = () => {
       </div>
       <div ref={endRef}></div>
     </div>
-    <div className="bottom flex items-center gap-2 p-2 border-t-5">
+    <div className="bottom">
     <div className="icons overflow-x-auto whitespace-nowrap flex gap-2 max-w-full">
   <img src="/img.png" alt="" />
   <img src="/camera.png" alt="" />
