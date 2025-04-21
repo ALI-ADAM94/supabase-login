@@ -77,21 +77,38 @@ const Chat = () => {
       </div>
       <div ref={endRef}></div>
     </div>
-    <div className='bottom'>
-      <div className='icons'>
-        <img src='/img.png' alt=''/>
-        <img src='/camera.png' alt=''/>
-        <img src='/mic.png' alt=''/>
-      </div>
-      <input type='text' placeholder='Type a message...' value={text} onChange={(e)=>setText(e.target.value)}/>
-      <div className='emoji'>
-        <img src='/emoji.png' alt='' onClick={()=>setOpen((prev) => !prev)}/>
-         <div className='picker'>
-          <EmojiPicker open={open} onEmojiClick={handleEmoji}/>
-         </div>
-      </div>
-      <button className='sendButton'>Send</button>
+    <div className="bottom flex items-center gap-2 p-2 border-t">
+  <div className="icons overflow-x-auto whitespace-nowrap flex gap-2">
+    <img src="/img.png" alt="" className="inline-block" />
+    <img src="/camera.png" alt="" className="inline-block" />
+    <img src="/mic.png" alt="" className="inline-block" />
+  </div>
+  
+  <input
+    type="text"
+    placeholder="Type a message..."
+    value={text}
+    onChange={(e) => setText(e.target.value)}
+    className="flex-1 px-4 py-2 border rounded-md"
+  />
+  
+  <div className="emoji relative">
+    <img
+      src="/public/emoji.png"
+      alt=""
+      onClick={() => setOpen((prev) => !prev)}
+      className="cursor-pointer"
+    />
+    <div className="picker absolute top-full mt-1 z-10">
+      <EmojiPicker open={open} onEmojiClick={handleEmoji} />
     </div>
+  </div>
+  
+  <button className="sendButton px-4 py-2 bg-blue-500 text-white rounded-md">
+    Send
+  </button>
+</div>
+
     </div>
   )
 }
