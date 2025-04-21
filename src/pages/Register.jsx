@@ -32,7 +32,7 @@ const Register = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="w-full max-w-md p-8 bg-transparent rounded-2xl shadow-lg"
+        className="w-full max-w-md p-8 justify-center bg-transparent rounded-2xl shadow-lg"
       >
         <motion.h2
           initial={{ scale: 0.9, opacity: 0 }}
