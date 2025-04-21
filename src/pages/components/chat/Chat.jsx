@@ -1,6 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import './chat.css';
 import EmojiPicker from 'emoji-picker-react';
+import avatar from '../assets/avatar.png';
+import phone from '../assets/phone.png';
+import video from '../assets/video.png';
+import info from '../assets/info.png';
+import imgIcon from '../assets/img.png';
+import camera from '../assets/camera.png';
+import mic from '../assets/mic.png';
+import emoji from '../assets/emoji.png';
 
 const Chat = () => {
   const [open,setOpen] = useState(false);
@@ -20,7 +28,7 @@ const Chat = () => {
     <div className='chat'>
     <div className='top'>
       <div className='user'>
-        <img src="../assets/avatar.png" alt=''/>
+        <img src={avatar} alt=''/>
         <div className='texts'>
           <span>Ali Adam</span>
           <p>welcome to my App</p>
