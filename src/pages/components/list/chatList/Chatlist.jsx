@@ -15,6 +15,7 @@ const Chatlist = () => {
         onClick={()=>setAddMode((prev)=> !prev)}
       />
     </div>
+    <div class="h-64 overflow-y-auto border p-4">
     <div className='item'>
          <img src='./avatar.png' alt=''/>
          <div className='texts'>
@@ -36,6 +37,8 @@ const Chatlist = () => {
             <p>Hello</p>
          </div>
     </div>
+    </div>
+  
     <div className='item'>
          <img src='./avatar.png' alt=''/>
          <div className='texts'>
