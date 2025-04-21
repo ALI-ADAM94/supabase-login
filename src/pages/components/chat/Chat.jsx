@@ -90,7 +90,7 @@ const Chat = () => {
     value={text}
     onChange={(e) => setText(e.target.value)}
     className="w-48 px-4 py-2 border rounded-md"
-"
+
   />
   
   <div className="emoji relative">
