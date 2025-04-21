@@ -17,10 +17,10 @@ const Dashboard =()=> {
 
   return (
     <div>
-    <h1>Hello , you are logged in.</h1>
     {
       signOut ==false ? (  
         <>
+        <h1>Hello , you are logged in.</h1>
         <List/>
         <Chat/>
         <Detail/>
