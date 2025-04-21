@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-blue-900 px-4">
       <motion.div
         className="w-full max-w-md bg-white p-8 rounded-2xl shadow-md"
         initial={{ opacity: 0, y: 50 }}
