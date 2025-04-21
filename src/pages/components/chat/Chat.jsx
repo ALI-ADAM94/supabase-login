@@ -89,7 +89,7 @@ const Chat = () => {
     placeholder="Type a message..."
     value={text}
     onChange={(e) => setText(e.target.value)}
-    className="w-48 px-4 py-2 border rounded-md"
+    className="w-24 px-4 py-1 border rounded-md"
 
   />
   
@@ -100,7 +100,7 @@ const Chat = () => {
       onClick={() => setOpen((prev) => !prev)}
       className="cursor-pointer"
     />
-    <div className="picker absolute top-full mt-1 z-100">
+    <div className="picker absolute top-full mt-1 z-200">
       <EmojiPicker open={open} onEmojiClick={handleEmoji} />
     </div>
   </div>
