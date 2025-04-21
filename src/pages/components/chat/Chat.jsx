@@ -98,14 +98,14 @@ const Chat = () => {
       src="/emoji.png"
       alt=""
       onClick={() => setOpen((prev) => !prev)}
-      className="cursor-pointer"
+  
     />
     <div className="picker">
       <EmojiPicker open={open} onEmojiClick={handleEmoji} />
     </div>
   </div>
   
-  <button className="sendButton px-4 py-4 bg-blue-500 text-white rounded-md">
+  <button className="sendButton ">
     Send
   </button>
 </div>
