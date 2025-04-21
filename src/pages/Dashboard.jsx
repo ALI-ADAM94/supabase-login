@@ -12,30 +12,22 @@ const Dashboard =()=> {
   const signOut = async ()=>{
        const {error}= await supabase.auth.signOut();
        if(error) throw error;
+
+         navigate(<List/>);
+        navigate(<Chat/>);
+        navigate(<Detail/>);
+        <button onClick={signOut}>Sign out</button>
+        navigate(<Notification/>)
  
   }
 
   return (
     <div>
-    {
-      signOut ==false ? (  
-        <>
-        <h1>Hello , you are logged in.</h1>
-        navigate(<List/>);
-        navigate(<Chat/>);
-        navigate(<Detail/>);
 
-        <button onClick={signOut}>Sign out</button>
-        navigate(<Notification/>)
         
-        </>
-    ) : (
-
-      navigate(Login)
-    )}
- 
-
-
+          <h1>Hello , you are logged in.</h1>
+          
+  
     </div>
   )
 }
