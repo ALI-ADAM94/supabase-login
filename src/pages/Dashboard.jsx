@@ -1,10 +1,10 @@
 import React from 'react';
 import  supabase  from '../../supbaseClient';
 import {useNavigate} from 'react-router-dom';
-import Chat from "./components/chat/Chat"
-import List from "./components/list/List"
+import Chat from "./components/chat/Chat.jsx"
+import List from "./components/list/List.jsx"
 import Detail from './components/detail/Detail.jsx'
-import Login from "./components/login/Login";
+import Login from "./Login.jsx";
 import Notification from './components/notification/Notification.jsx';
 
 const Dashboard =()=> {
