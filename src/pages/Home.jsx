@@ -4,7 +4,7 @@ const Home =()=> {
  
  
   return (
-    <div className="flex items-center justify-center min-h-screen m-[200px]">
+    <div className="flex items-center justify-center min-h-screen m-[200px] p-[5px]">
 
        <Login/>
       
