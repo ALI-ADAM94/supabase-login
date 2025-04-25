@@ -78,23 +78,24 @@ const Chat = () => {
       <div ref={endRef}></div>
     </div>
     <div className="bottom">
-    <div className="icons">
-  <img src="/img.png" alt="" />
-  <img src="/camera.png" alt="" />
-  <img src="/mic.png" alt=""/>
+    <div className="icons flex items-center gap-3">
+  <img src="/img.png" alt="" className="w-6 h-6 cursor-pointer" />
+  <img src="/camera.png" alt="" className="w-6 h-6 cursor-pointer" />
+  <img src="/mic.png" alt="" className="w-6 h-6 cursor-pointer" />
 </div>
-<div className="flex items-center gap-2 p-2 border rounded-lg">
+
+<div className="flex items-center gap-2 p-2  rounded-lg">
   <input
     type="text"
     placeholder="Type a message..."
     value={text}
     onChange={(e) => setText(e.target.value)}
-    className="flex-1 px-3 py-2 border rounded-md focus:outline-none"
+    className="flex-1 px-3 py-2  rounded-md focus:outline-none"
   />
   
   <div className="emoji relative">
     <img
-      src="/public/emoji.png"
+      src="/emoji.png"
       alt="emoji"
       onClick={() => setOpen((prev) => !prev)}
       className="w-6 h-6 cursor-pointer"
