@@ -58,7 +58,7 @@ const Login = () => {
             required
             className="w-full mb-4 px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        <br/> 
+        <br/> <br/>
           <input
             type="password"
             placeholder="Password"
@@ -67,7 +67,7 @@ const Login = () => {
             required
             className="w-full mb-4 px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        <br/> 
+        <br/> <br/>
           <motion.button
             type="submit"
             className="w-full mb-4 bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition-colors"
@@ -77,7 +77,7 @@ const Login = () => {
             Log in
           </motion.button>
         </form>
-        <br/>
+        <br/> <br/>
         <div className="mt-6 text-center text-sm text-white">
         
           <span>Don't have an account? </span>
