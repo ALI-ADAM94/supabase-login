@@ -83,33 +83,34 @@ const Chat = () => {
   <img src="/camera.png" alt="" />
   <img src="/mic.png" alt=""/>
 </div>
-
+<div className="flex items-center gap-2 p-2 border rounded-lg">
   <input
     type="text"
     placeholder="Type a message..."
     value={text}
     onChange={(e) => setText(e.target.value)}
-    
-
+    className="flex-1 px-3 py-2 border rounded-md focus:outline-none"
   />
   
-  <div className="emoji">
+  <div className="emoji relative">
     <img
       src="/public/emoji.png"
-      alt=""
+      alt="emoji"
       onClick={() => setOpen((prev) => !prev)}
-  
+      className="w-6 h-6 cursor-pointer"
     />
-    <div className="picker">
-      <EmojiPicker open={open} onEmojiClick={handleEmoji} />
-    </div>
+    {open && (
+      <div className="picker absolute bottom-full mb-2 z-10">
+        <EmojiPicker open={open} onEmojiClick={handleEmoji} />
+      </div>
+    )}
   </div>
-  
-  <button className="sendButton ">
+
+  <button className="sendButton bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
     Send
   </button>
 </div>
-
+</div>
     </div>
   )
 }
