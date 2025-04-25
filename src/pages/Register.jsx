@@ -55,7 +55,7 @@ const Register = () => {
           </motion.div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4 justify-center">
+        <form onSubmit={handleSubmit} className="space-y-8 justify-center">
           <input
             type="email"
             placeholder="Email"
@@ -63,7 +63,7 @@ const Register = () => {
             onChange={(e) => setEmail(e.target.value)}
             required
             className="w-full m-2  px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-          /><br/>
+          />
           <input
             type="password"
             placeholder="Password"
