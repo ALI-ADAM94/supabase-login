@@ -49,7 +49,7 @@ const Login = () => {
         
         {message && <div className="mb-4 text-red-600 text-sm">{message}</div>}
 
-        <form onSubmit={handleSubmit} className="justify-center">
+        <form onSubmit={handleSubmit} className=" space-y-6 justify-center">
           <input
             type="email"
             placeholder="Email"
