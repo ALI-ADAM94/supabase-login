@@ -3,15 +3,15 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Login from './Login';
 const Home =()=> {
-  //const navigate = useNavigate();
-    //    navigate(<Login/>)
+  const navigate = useNavigate();
+ 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-    <div className="w-full max-w-md p-6 bg-white border border-gray-300 rounded-2xl shadow-lg">
-    
-        <Login/>
+    <div className="flex items-center justify-center min-h-screen">
 
-    </div>
+    navigate(<Login/>)
+      
+
+  
     </div>
   )
 }
