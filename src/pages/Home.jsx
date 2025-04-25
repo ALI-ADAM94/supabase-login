@@ -5,11 +5,11 @@ import './Home.css';
 const Home =()=> {
  
   return (
-    <div className='home'>
+  <div className='home'>
    <div className="flex items-center justify-center min-h-screen p-[5px]">
-  <Login/>
-</div>
-    </div>
+      <Login/>
+  </div>
+  </div>
 
   )
 }

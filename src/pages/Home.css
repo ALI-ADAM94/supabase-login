@@ -1,11 +1,11 @@
-div{
+.home{
  background-image: url("/bg.jpg");
  display: flex;
  align-items: center;
  justify-content: center;
 
 }
-.home {
+div {
  width: 93vw;
  height: 90vh;
  align-items: center;
