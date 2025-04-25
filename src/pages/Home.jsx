@@ -8,7 +8,7 @@ const Home =()=> {
          <br/>
          <br/>
          {
-                  navigate("/login")
+                  navigate("/Login")
          }
  
 
