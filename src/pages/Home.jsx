@@ -1,7 +1,7 @@
 import React from 'react';
 import Login from './Login';
 import './Home.css';
-import '../App.css';
+
 const Home =()=> {
  
   return (
