@@ -56,7 +56,7 @@ const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 mb-[2px]"
+            className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 m-2"
           />
           <br/>
           <input
@@ -65,12 +65,12 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 mb-[2px]"
+            className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 m-2"
           />
           <br/>
           <motion.button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition-colors mb-[2px]"
+            className="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition-colors m-2"
             whileTap={{ scale: 0.95 }}
             whileHover={{ scale: 1.02 }}
           >
