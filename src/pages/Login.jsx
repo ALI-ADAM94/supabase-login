@@ -42,8 +42,9 @@ const Login = () => {
                 transition={{ delay: 0.2, duration: 0.4 }}
                 className="text-2xl font-bold text-center mb-6"
               >
-                   Login
+                   Login 
               </motion.h2>
+              <br/>
         <h2 className="text-2xl font-bold text-center text-white mb-6"></h2>
         
         {message && <div className="mb-4 text-red-600 text-sm">{message}</div>}

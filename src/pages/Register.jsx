@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import supabase from '../../supbaseClient'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-
+import './Home.css';
 const Register = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -27,7 +27,8 @@ const Register = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-transparent">
+    <div className='home'>
+      <div className="container flex items-center justify-center min-h-screen bg-transparent">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,6 +42,7 @@ const Register = () => {
           className="text-2xl font-bold text-center mb-6"
         >
           Register
+          <br/>
         </motion.h2>
 
         {message && (
@@ -86,7 +88,9 @@ const Register = () => {
         </div>
       </motion.div>
     </div>
-  )
+
+    </div>
+      )
 }
 
 export default Register
