@@ -47,7 +47,7 @@ const Login = () => {
               <br/>
         <h2 className="text-2xl font-bold text-center text-white mb-6"></h2>
         
-        {message && <div className="mb-4 text-red-600 text-sm">{message}</div>}
+        {message && <div className="mb-4 text-red-600 text-sm">{message}<br/></div>}
 
         <form onSubmit={handleSubmit} className="space-y-4 justify-center">
           <input
@@ -58,6 +58,7 @@ const Login = () => {
             required
             className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
+          <br/>
           <input
             type="password"
             placeholder="Password"
@@ -66,6 +67,7 @@ const Login = () => {
             required
             className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
+          <br/>
           <motion.button
             type="submit"
             className="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition-colors"
@@ -77,7 +79,9 @@ const Login = () => {
         </form>
 
         <div className="mt-6 text-center text-sm text-white">
+        <br/>
           <span>Don't have an account? </span>
+          <br/>
           <Link to="/register" className="text-blue-600 hover:underline">Register</Link>
         </div>
       </motion.div>

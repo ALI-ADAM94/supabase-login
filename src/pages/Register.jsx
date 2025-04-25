@@ -63,7 +63,7 @@ const Register = () => {
             onChange={(e) => setEmail(e.target.value)}
             required
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-          />
+          /><br/>
           <input
             type="password"
             placeholder="Password"
@@ -71,7 +71,7 @@ const Register = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-          />
+          /> <br/>
           <button
             type="submit"
             className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
@@ -79,9 +79,10 @@ const Register = () => {
             Create Account
           </button>
         </form>
-
+        <br/>
         <div className="mt-6 text-center text-sm text-white">
-          <span>Already have an account? </span>
+      
+          <span>Already have an account? </span><br/>
           <Link to="/login" className="text-blue-500 hover:underline">
             Login
           </Link>
