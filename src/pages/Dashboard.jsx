@@ -6,7 +6,7 @@ import List from "./components/list/List.jsx"
 import Detail from './components/detail/Detail.jsx'
 import Login from "./Login.jsx";
 import Notification from './components/notification/Notification.jsx';
-
+import '../App.css';
 const Dashboard =()=> {
     const navigate = useNavigate();
   const signOut = async ()=>{

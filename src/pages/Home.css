@@ -6,7 +6,7 @@
  height: 100vh;
 
 }
-div {
+.container {
     width: 93vw;
     height: 90vh;
     background-color: rgba(17,25,40,0.75);
