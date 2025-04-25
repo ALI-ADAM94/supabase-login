@@ -8,8 +8,6 @@
 div {
     width: 93vw;
     height: 90vh;
-    align-items: center;
     background-color: rgba(17,25,40,0.75);
-    backdrop-filter: blur(19px) saturate(180%);
-    border-radius: 12px;
+
 }
