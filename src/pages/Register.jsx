@@ -42,9 +42,9 @@ const Register = () => {
           className="text-2xl font-bold text-center mb-6"
         >
           Register
-          <br/>
+         
         </motion.h2>
-
+           <br/>
         {message && (
           <motion.div
             initial={{ opacity: 0 }}
