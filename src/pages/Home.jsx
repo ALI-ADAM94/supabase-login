@@ -4,13 +4,9 @@ const Home =()=> {
  
  
   return (
-    <div className="flex items-center justify-center min-h-screen m-[200px] p-[5px]">
-
-       <Login/>
-      
-
-  
-    </div>
+<div className="flex items-center justify-center min-h-screen p-[5px]">
+  <Login/>
+</div>
   )
 }
 
