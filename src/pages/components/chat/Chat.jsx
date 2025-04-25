@@ -95,7 +95,7 @@ const Chat = () => {
   
   <div className="emoji">
     <img
-      src="/emoji.png"
+      src="/public/emoji.png"
       alt=""
       onClick={() => setOpen((prev) => !prev)}
   
