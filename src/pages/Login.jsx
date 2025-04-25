@@ -77,7 +77,7 @@ const Login = () => {
             Log in
           </motion.button>
         </form>
-        <br/> <br/>
+        <br/>
         <div className="mt-6 text-center text-sm text-white">
         
           <span>Don't have an account? </span>
