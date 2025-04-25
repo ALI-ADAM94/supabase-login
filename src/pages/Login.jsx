@@ -79,9 +79,9 @@ const Login = () => {
         </form>
 
         <div className="mt-6 text-center text-sm text-white">
-        <br/>
+        
           <span>Don't have an account? </span>
-          <br/>
+          
           <Link to="/register" className="text-blue-600 hover:underline">Register</Link>
         </div>
       </motion.div>
