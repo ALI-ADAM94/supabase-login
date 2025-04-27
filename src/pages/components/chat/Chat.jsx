@@ -84,24 +84,24 @@ const Chat = () => {
   <img src="/mic.png" alt="" className="w-6 h-6 cursor-pointer" />
 </div>
 
-<div className="flex items-center gap-2 p-2  rounded-lg">
+<div className="flex">
   <input
     type="text"
     placeholder="Type a message..."
     value={text}
     onChange={(e) => setText(e.target.value)}
-    className="flex-1 px-3 py-2  rounded-md focus:outline-none"
+    
   />
   
-  <div className="emoji relative">
+  <div className="emoji ">
     <img
       src="/emoji.png"
       alt="emoji"
       onClick={() => setOpen((prev) => !prev)}
-      className="w-6 h-6 cursor-pointer"
+  
     />
     {open && (
-      <div className="picker absolute bottom-full mb-2 z-10">
+      <div className="picker">
         <EmojiPicker open={open} onEmojiClick={handleEmoji} />
       </div>
     )}
