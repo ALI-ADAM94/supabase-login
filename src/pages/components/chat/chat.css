@@ -133,10 +133,10 @@
     cursor: pointer;
  }
  .bottom .emoji {
-   position: absolute;
+   position: relative;
  }
  .bottom .emoji .picker{
-   position:absolute;
+   position:relative;
    bottom: 50px;
    left:0px;
  }
