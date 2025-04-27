@@ -84,7 +84,7 @@ const Chat = () => {
   <img src="/mic.png" alt="" />
 </div>
 
-<div className="flex">
+<div>
   <input
     type="text"
     placeholder="Type a message..."
@@ -93,7 +93,7 @@ const Chat = () => {
     
   />
   
-  <div className="emoji ">
+  <div className="emoji">
     <img
       src="/emoji.png"
       alt="emoji"
