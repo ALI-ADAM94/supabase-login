@@ -123,14 +123,7 @@ img{
     font-size: 16px;
 
  }
-  .sendButton{
-    background-color: #5183fe;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
- }
+
   .emoji {
    position: relative;
    .picker{
@@ -139,5 +132,13 @@ img{
    left:0px;
    }
 }
+  .sendButton{
+    background-color: #5183fe;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
 }
 }
