@@ -134,10 +134,10 @@ img{
   .emoji {
    position: relative;
  
- .picker{
+   .picker{
    position:relative;
    bottom: 50px;
    left:0px;
- }
+   }
 }
 }
