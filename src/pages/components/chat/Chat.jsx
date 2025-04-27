@@ -78,10 +78,10 @@ const Chat = () => {
       <div ref={endRef}></div>
     </div>
     <div className="bottom">
-    <div className="icons flex items-center gap-3">
-  <img src="/img.png" alt="" className="w-6 h-6 cursor-pointer" />
-  <img src="/camera.png" alt="" className="w-6 h-6 cursor-pointer" />
-  <img src="/mic.png" alt="" className="w-6 h-6 cursor-pointer" />
+    <div className="icons">
+  <img src="/img.png" alt=""  />
+  <img src="/camera.png" alt="" />
+  <img src="/mic.png" alt="" />
 </div>
 
 <div className="flex">
@@ -107,7 +107,7 @@ const Chat = () => {
     )}
   </div>
 
-  <button className="sendButton bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+  <button className="sendButton">
     Send
   </button>
 </div>
