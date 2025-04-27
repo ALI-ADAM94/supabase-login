@@ -1,5 +1,5 @@
 .chat{
- flex: 2;
+ flex:1;
     border-left: 1px solid #dddddd35;
     border-right: 1px solid #dddddd35;
     height: 100%;
@@ -120,14 +120,14 @@ img{
     color: white;
     padding: 10px;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 16px;
 
  }
 
   .emoji {
-   position:relative;
-   .picker{
    position:absolute;
+   .picker{
+   position:relative;
    bottom: 30px;
    left:0px;
    }
