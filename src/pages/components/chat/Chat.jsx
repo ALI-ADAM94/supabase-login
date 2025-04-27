@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './chat.css';
 import EmojiPicker from 'emoji-picker-react';
+import { div } from 'framer-motion/m';
 
 const Chat = () => {
   const [open,setOpen] = useState(false);
@@ -84,7 +85,7 @@ const Chat = () => {
   <img src="/mic.png" alt="" />
 </div>
 
-<div>
+
   <input
     type="text"
     placeholder="Type a message..."
@@ -110,10 +111,11 @@ const Chat = () => {
   <button className="sendButton">
     Send
   </button>
-</div>
-</div>
-    </div>
+
+
+  </div>
+  </div>
   )
 }
 
-export default Chat
+export default Chat;
