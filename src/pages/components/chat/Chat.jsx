@@ -97,12 +97,12 @@ const Chat = () => {
         <EmojiPicker open={open} onEmojiClick={handleEmoji} />
       </div>
     )}
-  </div>
 
   </div>
   <button className="sendButton">
     Send
   </button>
+  </div>
   </div>
   
   )
