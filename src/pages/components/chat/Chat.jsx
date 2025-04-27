@@ -83,17 +83,13 @@ const Chat = () => {
   <img src="/img.png" alt=""  />
   <img src="/camera.png" alt="" />
   <img src="/mic.png" alt="" />
-</div>
-
-
+  </div>
   <input
     type="text"
     placeholder="Type a message..."
     value={text}
     onChange={(e) => setText(e.target.value)}
-    
   />
-  
   <div className="emoji">
     <img
       src="/emoji.png"
@@ -106,15 +102,15 @@ const Chat = () => {
         <EmojiPicker open={open} onEmojiClick={handleEmoji} />
       </div>
     )}
-  </div>
 
   <button className="sendButton">
     Send
   </button>
 
-
   </div>
   </div>
+  </div>
+  
   )
 }
 
