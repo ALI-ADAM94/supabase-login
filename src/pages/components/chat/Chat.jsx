@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './chat.css';
 import EmojiPicker from 'emoji-picker-react';
-import { div } from 'framer-motion/m';
+
 
 const Chat = () => {
   const [open,setOpen] = useState(false);
@@ -91,12 +91,7 @@ const Chat = () => {
     onChange={(e) => setText(e.target.value)}
   />
   <div className="emoji">
-    <img
-      src="/emoji.png"
-      alt="emoji"
-      onClick={() => setOpen((prev) => !prev)}
-  
-    />
+    <img src="/emoji.png" alt="emoji" onClick={() => setOpen((prev) => !prev)} />
     {open && (
       <div className="picker">
         <EmojiPicker open={open} onEmojiClick={handleEmoji} />
