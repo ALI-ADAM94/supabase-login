@@ -55,7 +55,7 @@
     flex-direction: column;
     gap:20px;
 
- .message{
+   .message{
     max-width: 70%;
     display: flex;
     gap: 20px;
@@ -133,7 +133,7 @@
     cursor: pointer;
  }
  .bottom .emoji {
-   position: relative;
+   position: absolute;
  }
  .bottom .emoji .picker{
    position:absolute;

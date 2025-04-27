@@ -35,7 +35,7 @@ const Chat = () => {
     </div>
     <div className="center">
 
-      <div className='message '>
+      <div className='message'>
         <img src='/avatar.png' alt=''/>
         <div className='texts'>
           <p>First message in my App</p>
@@ -49,7 +49,7 @@ const Chat = () => {
           <span>1 min ago</span>
         </div>
       </div>
-      <div className='message '>
+      <div className='message'>
       <img src='/avatar.png' alt=''/>
         <div className='texts'>
           <p>First message in my App</p>
@@ -62,7 +62,7 @@ const Chat = () => {
           <span>1 min ago</span>
         </div>
       </div>
-      <div className='message '>
+      <div className='message'>
       <img src='/avatar.png' alt=''/>
         <div className='texts'>
           <p>First message in my App</p>
