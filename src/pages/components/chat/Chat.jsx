@@ -78,7 +78,7 @@ const Chat = () => {
       </div>
       <div ref={endRef}></div>
     </div>
-  <div className="bottom">
+  < className="bottom">
    <div className="icons">
     <img src="/img.png" alt=""  />
     <img src="/camera.png" alt="" />
@@ -97,11 +97,11 @@ const Chat = () => {
         <EmojiPicker open={open} onEmojiClick={handleEmoji} />
       </div>
     )}
-
+  </div>
+  
   <button className="sendButton">
     Send
   </button>
-   </div>
   </div>
    </div>
   )
