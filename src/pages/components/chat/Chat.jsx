@@ -98,13 +98,13 @@ const Chat = () => {
       </div>
     )}
 
-  </div>
+ 
   <button className="sendButton">
     Send
   </button>
   </div>
   </div>
-  
+   </div>
   )
 }
 
