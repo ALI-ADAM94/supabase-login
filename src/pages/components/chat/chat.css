@@ -95,7 +95,7 @@
  
  }
 .bottom{
-    padding: 20px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -113,7 +113,7 @@ img{
     cursor: pointer;
 }
  input{
-   
+   flex: 1;
     background-color: rgba(17, 25, 40, 0.5);
     border: none;
     outline: none;
