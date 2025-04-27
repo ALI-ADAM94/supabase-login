@@ -78,12 +78,12 @@ const Chat = () => {
       </div>
       <div ref={endRef}></div>
     </div>
-    <div className="bottom">
-    <div className="icons">
-  <img src="/img.png" alt=""  />
-  <img src="/camera.png" alt="" />
-  <img src="/mic.png" alt="" />
-  </div>
+  <div className="bottom">
+   <div className="icons">
+    <img src="/img.png" alt=""  />
+    <img src="/camera.png" alt="" />
+    <img src="/mic.png" alt="" />
+   </div>
   <input
     type="text"
     placeholder="Type a message..."
@@ -98,10 +98,11 @@ const Chat = () => {
       </div>
     )}
   </div>
+
+  </div>
   <button className="sendButton">
     Send
   </button>
-  </div>
   </div>
   
   )
