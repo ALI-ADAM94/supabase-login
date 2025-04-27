@@ -134,7 +134,7 @@ img{
   .emoji {
    position: relative;
    .picker{
-   position:absolute;
+   position: relative;
    bottom: 50px;
    left:0px;
    }

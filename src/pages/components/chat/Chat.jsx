@@ -98,7 +98,6 @@ const Chat = () => {
       </div>
     )}
   </div>
-  <br/>
     <button className="sendButton">
     Send
   </button>
