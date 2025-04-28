@@ -107,11 +107,11 @@
     display: flex;
     gap: 10px;
   }
-img{
+ img{
     width: 20px;
     height: 20px;
     cursor: pointer;
-}
+ }
  input{
   flex: 1;
     background-color: rgba(17, 25, 40, 0.5);
@@ -125,10 +125,10 @@ img{
  }
 
   .emoji {
-   position:absolute;
-   .picker{
    position:relative;
-   bottom: 30px;
+   .picker{
+   position:absolute;
+   bottom: 50px;
    left:0px;
    }
 }
