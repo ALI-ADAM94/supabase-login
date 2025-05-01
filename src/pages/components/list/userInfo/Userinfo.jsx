@@ -2,9 +2,9 @@ import  './userInfo.css'
 import supabase from '../../../../../supbaseClient.js';
 const Userinfo = () => {
   // Get user info
-const get = async () => {
+const get = async (ev) => {
   const { data, error } = await supabase.auth.getUser({
-    data: email,
+    data: {email : email},
    
   });
 
@@ -13,8 +13,8 @@ const get = async () => {
     return null
   }
 
-  console.log('User info:', user)
-  return user
+  console.log('User info:', data)
+  return data
 }
   return (
     <div className='userInfo'>
