@@ -1,8 +1,8 @@
 import  './userInfo.css'
-import supabase from '../../supbaseClient';
+import supabase from '../../../../../supbaseClient.js';
 const Userinfo = () => {
   // Get user info
-const user = async () => {
+const get = async () => {
   const {
     data: { user },
     error,
@@ -20,7 +20,7 @@ const user = async () => {
     <div className='userInfo'>
     <div className='user'>
     <img src="./avatar.png" alt=''/>
-    <h4>{user.email} </h4>
+    <h4>{get.email} </h4>
     </div>
     <div className='icons'>
         <img src="./more.png" alt=''/>
