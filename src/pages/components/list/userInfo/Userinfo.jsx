@@ -4,7 +4,7 @@ const Userinfo = () => {
   // Get user info
 const get = async (ev) => {
   const { data, error } = await supabase.auth.getUser({
-    data: {email : email},
+    data: email,
    
   });
 
@@ -12,15 +12,17 @@ const get = async (ev) => {
     console.error('Error fetching user:', error.message)
     return null
   }
-
-  console.log('User info:', data)
+  if(data){
+      console.log('User info:', data)
   return data
+  }
+
 }
   return (
     <div className='userInfo'>
     <div className='user'>
     <img src="./avatar.png" alt=''/>
-    <h4>{get.email} </h4>
+    <h4>{get.data.email} </h4>
     </div>
     <div className='icons'>
         <img src="./more.png" alt=''/>
