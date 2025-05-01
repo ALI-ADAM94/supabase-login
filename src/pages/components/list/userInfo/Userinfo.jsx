@@ -2,19 +2,26 @@ import  './userInfo.css'
 import supabase from '../../../../../supbaseClient.js';
 const Userinfo = () => {
   // Get user info
-const get = async (ev) => {
-  const { data :{user} , error } = await supabase.auth.getUser();
 
-  if (error) {
-    console.error('Error fetching user:', error.message)
-    return null
-  }
-  if(data){
-      console.log('User info:', user)
-  return data
-  }
+  const [user, setUser] = useState(null)
 
-}
+  useEffect(() => {
+    const fetchUser = async () => {
+      const {
+        data: { user },
+        error,
+      } = await supabase.auth.getUser()
+
+      if (error) {
+        console.error('Error fetching user:', error.message)
+      } else {
+        setUser(user)
+      }
+    }
+
+    fetchUser()
+  }, [])
+
   return (
     <div className='userInfo'>
     <div className='user'>
@@ -30,4 +37,4 @@ const get = async (ev) => {
   )
 }
 
-export default Userinfo
+export default Userinfo;
