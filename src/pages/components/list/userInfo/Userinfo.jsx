@@ -1,5 +1,5 @@
 import  './userInfo.css'
-import { supabase } from '@supabase/auth-ui-shared'
+import supabase from '../../supbaseClient';
 const Userinfo = () => {
   // Get user info
 const user = async () => {
