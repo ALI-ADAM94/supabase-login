@@ -2,7 +2,7 @@ import  './userInfo.css'
 import { supabase } from '@supabase/auth-ui-shared'
 const Userinfo = () => {
   // Get user info
-const getUserInfo = async () => {
+const user = async () => {
   const {
     data: { user },
     error,
