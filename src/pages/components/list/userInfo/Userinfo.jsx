@@ -3,10 +3,10 @@ import supabase from '../../../../../supbaseClient.js';
 const Userinfo = () => {
   // Get user info
 const get = async () => {
-  const {
-    data: { user },
-    error,
-  } = await supabase.auth.getUser()
+  const { data, error } = await supabase.auth.getUser({
+    data: email,
+   
+  });
 
   if (error) {
     console.error('Error fetching user:', error.message)
