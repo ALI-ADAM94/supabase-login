@@ -1,11 +1,26 @@
 import  './userInfo.css'
-
+import { supabase } from '@supabase/auth-ui-shared'
 const Userinfo = () => {
+  // Get user info
+const getUserInfo = async () => {
+  const {
+    data: { user },
+    error,
+  } = await supabase.auth.getUser()
+
+  if (error) {
+    console.error('Error fetching user:', error.message)
+    return null
+  }
+
+  console.log('User info:', user)
+  return user
+}
   return (
     <div className='userInfo'>
     <div className='user'>
     <img src="./avatar.png" alt=''/>
-    <h4>Ali Adam </h4>
+    <h4>{getUserInfo.email} </h4>
     </div>
     <div className='icons'>
         <img src="./more.png" alt=''/>
