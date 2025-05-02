@@ -1,5 +1,6 @@
 import  './userInfo.css'
 import supabase from '../../../../../supbaseClient.js';
+import { useState, useEffect } from 'react';
 const Userinfo = () => {
   // Get user info
   const [email, setEmail] = useState(null)
