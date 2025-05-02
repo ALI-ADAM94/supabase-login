@@ -15,8 +15,10 @@ const Userinfo = () => {
         setEmail('No user found')
         return
       }
-  
-      setEmail(user.email)
+      if(data){
+              setEmail(user?.email)
+      }
+
     }
   
     getUserInfo()
@@ -26,7 +28,7 @@ const Userinfo = () => {
     <div className='userInfo'>
     <div className='user'>
     <img src="./avatar.png" alt=''/>
-    <h4>{ email} </h4>
+    <h4>{email} </h4>
     </div>
     <div className='icons'>
         <img src="./more.png" alt=''/>
