@@ -2,28 +2,20 @@ import  './userInfo.css'
 import supabase from '../../../../../supbaseClient.js';
 const Userinfo = () => {
   // Get user info
-
-  useEffect(() => {
-    const checkAuth = async () => {
-      const {
-        data: { session },
-      } = await supabase.auth.getSession()
+  const getUserInfo = async () => {
+    const {
+      data: { user },
+      error,
+    } = await supabase.auth.getUser()
   
-      if (!session) {
-        console.log('No session found, user is not logged in.')
-        return
-      }
-  
-      const {
-        data: { user },
-      } = await supabase.auth.getUser()
-  
-      console.log('User:', user)
-      setUser(user)
+    if (error) {
+      console.error('Error fetching user:', error.message)
+      return null
     }
   
-    checkAuth()
-  }, [])
+    console.log('User info:', user)
+    return user
+  }
   
   return (
     <div className='userInfo'>
