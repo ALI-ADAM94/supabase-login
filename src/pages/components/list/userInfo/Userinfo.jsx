@@ -16,9 +16,7 @@ const Userinfo = () => {
         setEmail('No user found')
         return
       }
-      if(data){
-              setEmail(user?.email)
-      }
+      setEmail(user?.email);
 
     }
   
