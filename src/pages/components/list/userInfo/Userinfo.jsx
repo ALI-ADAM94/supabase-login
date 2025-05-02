@@ -16,12 +16,12 @@ const Userinfo = () => {
     console.log('User info:', user)
     return user
   }
-
+const em = getUserInfo.email
   return (
     <div className='userInfo'>
     <div className='user'>
     <img src="./avatar.png" alt=''/>
-    <h4>{getUserInfo.email} </h4>
+    <h4>{em} </h4>
     </div>
     <div className='icons'>
         <img src="./more.png" alt=''/>
