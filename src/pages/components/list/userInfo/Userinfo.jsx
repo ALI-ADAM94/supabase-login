@@ -3,25 +3,28 @@ import supabase from '../../../../../supbaseClient.js';
 const Userinfo = () => {
   // Get user info
 
-  const [user, setUser] = useState(null)
-
   useEffect(() => {
-    const fetchUser = async () => {
+    const checkAuth = async () => {
+      const {
+        data: { session },
+      } = await supabase.auth.getSession()
+  
+      if (!session) {
+        console.log('No session found, user is not logged in.')
+        return
+      }
+  
       const {
         data: { user },
-        error
       } = await supabase.auth.getUser()
-
-      if (error) {
-        console.error('Error fetching user:', error.message)
-      } else {
-        setUser(user)
-      }
+  
+      console.log('User:', user)
+      setUser(user)
     }
-
-    fetchUser()
+  
+    checkAuth()
   }, [])
-
+  
   return (
     <div className='userInfo'>
     <div className='user'>
