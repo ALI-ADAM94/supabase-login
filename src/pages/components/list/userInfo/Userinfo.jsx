@@ -22,12 +22,12 @@ const Userinfo = () => {
 
     getUserInfo()
   }, [])
-  
+
   return (
     <div className='userInfo'>
     <div className='user'>
     <img src="./avatar.png" alt=''/>
-    <h4>{email} </h4>
+    <h4>{user?.email} </h4>
     </div>
     <div className='icons'>
         <img src="./more.png" alt=''/>
