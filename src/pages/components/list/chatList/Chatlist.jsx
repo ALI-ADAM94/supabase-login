@@ -10,13 +10,14 @@ const Chatlist = () => {
 
  useEffect(() => {
    const fetchMessages = async () => {
-     const { data, error } = await supabase.from('messages').select('*')
+     const { data, error } = await supabase.from('messages').select('*').neq('id', user.id);
      if (error) console.error('Error fetching messages:', error)
      else setMessages(data)
    }
 
    fetchMessages()
  }, [])
+
 
   return (
     <div className='chatList'>
@@ -31,7 +32,7 @@ const Chatlist = () => {
     </div>
     <div class="h-80 overflow-y-auto  p-4">
     {messages.map(msg => (
-        <div className='item' key={msg.id}>
+        <div className='item' key={msg.id }>
          <img src={msg.avatar_url || './avatar.png'} alt=''/>
          <div className='texts'>
             <span>{msg.username}</span>
