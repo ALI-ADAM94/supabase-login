@@ -55,7 +55,7 @@ const Chatlist = () => {
              <img src='./avatar.png' alt='' />
              <div className='texts'>
                <span>{user.username}</span>
-               <small class="inline-block bg-blue-500 text-white rounded-full px-1 py-1 text-center float-right">{user.message_count}</small>
+               <small class="inline-block bg-blue-500 text-white rounded-full w-8 h-8 text-center flex items-center justify-center float-right">{user.message_count}</small>
 
                <p>{user.message}</p>
              
