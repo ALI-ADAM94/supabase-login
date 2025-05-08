@@ -57,6 +57,12 @@
     }
     .item .texts span{
         font-weight: 500;
+        small{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
     }
     .item .texts p{
         font-size: 14px;
