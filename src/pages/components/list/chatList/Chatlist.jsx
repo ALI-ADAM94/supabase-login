@@ -10,6 +10,7 @@ const Chatlist = () => {
 
  useEffect(() => {
    const fetchMessages = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
      const { data, error } = await supabase.from('messages').select('*').neq('id', user.id);
      if (error) console.error('Error fetching messages:', error)
      else setMessages(data)
