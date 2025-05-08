@@ -1,8 +1,22 @@
-import { useState} from 'react';
+import { useEffect, useState } from 'react' ;
 import './chatList.css';
 import AddUser from './addUser/addUser';
+import supabase from '../../../../../supbaseClient';
+
 const Chatlist = () => {
-  const[addMode,setAddMode]=useState(false);
+
+ const[addMode,setAddMode]=useState(false);
+ const [messages, setMessages] = useState([])
+
+ useEffect(() => {
+   const fetchMessages = async () => {
+     const { data, error } = await supabase.from('messages').select('*')
+     if (error) console.error('Error fetching messages:', error)
+     else setMessages(data)
+   }
+
+   fetchMessages()
+ }, [])
 
   return (
     <div className='chatList'>
@@ -16,48 +30,15 @@ const Chatlist = () => {
       />
     </div>
     <div class="h-80 overflow-y-auto  p-4">
-    <div className='item'>
-         <img src='./avatar.png' alt=''/>
+    {messages.map(msg => (
+        <div className='item' key={msg.id}>
+         <img src={msg.avatar_url || './avatar.png'} alt=''/>
          <div className='texts'>
-            <span>Ali Adam</span>
-            <p>Hello</p>
+            <span>{msg.username}</span>
+            <p>{msg.message}</p>
          </div>
     </div>
-    <div className='item'>
-         <img src='./avatar.png' alt=''/>
-         <div className='texts'>
-            <span>Ali Adam</span>
-            <p>Hello</p>
-         </div>
-    </div>
-    <div className='item'>
-         <img src='./avatar.png' alt=''/>
-         <div className='texts'>
-            <span>Ali Adam</span>
-            <p>Hello</p>
-         </div>
-    </div>
-    <div className='item'>
-         <img src='./avatar.png' alt=''/>
-         <div className='texts'>
-            <span>Ali Adam</span>
-            <p>Hello</p>
-         </div>
-    </div>
-    <div className='item'>
-         <img src='./avatar.png' alt=''/>
-         <div className='texts'>
-            <span>Ali Adam</span>
-            <p>Hello</p>
-         </div>
-    </div>
-    <div className='item'>
-         <img src='./avatar.png' alt=''/>
-         <div className='texts'>
-            <span>Ali Adam</span>
-            <p>Hello</p>
-         </div>
-    </div>
+    ))}
 
     {addMode &&<AddUser/>}
     </div>
