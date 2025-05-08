@@ -56,7 +56,7 @@ const Chatlist = () => {
              <div className='texts'>
                <span>{user.username} 
              
-               <small class=" relative  bg-blue-500 text-white rounded-full w-8 h-5  inline-block  gap-5 text-center  items-center justify-center float-right">{user.message_count}</small>
+               <small class=" bg-blue-500 text-white rounded-full w-8 h-5 top-0 inline-block  gap-5 text-center  items-center justify-center float-right">{user.message_count}</small>
                </span>
            
               
