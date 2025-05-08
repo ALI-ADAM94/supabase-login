@@ -58,10 +58,11 @@ const Chatlist = () => {
            
               
                <p>{user.message}</p>
-                 <div class="relative">
+                 
+             </div>
+             <div class="relative">
                 <small class="absolute top-0 right-0 bg-blue-500 text-white rounded-full w-8 h-8 text-center flex items-center justify-center">{user.message_count}</small>
                </div>
-             </div>
            </div>
          ))}
          {addMode &&<AddUser/>}
